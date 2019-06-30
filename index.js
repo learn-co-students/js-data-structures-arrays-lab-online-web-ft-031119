@@ -9,29 +9,26 @@ function destructivelyPrependDriver() {
 }
 
 function destructivelyRemoveLastDriver() {
-  drivers.pop()
+  drivers.pop();
 }
 
 function destructivelyRemoveFirstDriver() {
-  drivers.shift()
+  drivers.shift();
 }
 
 function appendDriver(name) {
-  let array = [...drivers.slice(), name]
-  return array;
+  return [...drivers, name];
 }
 
 function prependDriver(name) {
-  let array = [name, ...drivers];
-  return array;
+  return [name, ...drivers];
+
 }
 
 function removeLastDriver() {
-  let array = drivers.slice(0, drivers.length - 1)
-  return array;
+  return drivers.slice(0, drivers.length - 1);
 }
 
 function removeFirstDriver() {
-  let array = drivers.slice(1)
-  return array;
+  return drivers.slice(1);
 }
